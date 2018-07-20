@@ -70,6 +70,8 @@ BOARD_MAIN_SIZE := 6012043264
 BOARD_MAIN_PARTITION_LIST := product vendor system
 BOARD_USES_METADATA_PARTITION := true
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
