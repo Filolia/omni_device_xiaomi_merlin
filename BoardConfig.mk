@@ -112,7 +112,7 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # TWRP Configuration
-TW_THEME := portrait_hdpi
+# TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -121,7 +121,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
 TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true 
+TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_SKIP_COMPATIBILITY_CHECK := true
@@ -140,3 +140,16 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # VINTF
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
+
+#SHRP
+SHRP_DEVICE_CODE := merlin
+SHRP_PATH := device/xiaomi/merlin
+SHRP_MAINTAINER := Leafaa
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+SHRP_FLASH := 0
+SHRP_REC_TYPE := Normal
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
